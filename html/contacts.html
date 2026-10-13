@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка и контакты — Velvet Bloom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a class="site-logo" href="../index.html">
+    <img src="../images/logo-bloom.png"
+     alt="Velvet Bloom — на главную"
+     width="180">
+</a>
+    <a href="../index.html">Главная</a>
+    <a href="bouquets.html">Букеты</a>
+    <a href="builder.html">Собрать букет</a>
+    <a href="study.html">Учебный раздел</a>
+    <a href="contacts.html#delivery" aria-current="page">Доставка и контакты</a>
+    <a href="order.html">Заказать букет</a>
+    <a href="https://ru.wikipedia.org/wiki/Цветковые_растения"
+   target="_blank"
+   rel="noopener noreferrer">О цветах ↗</a>
+</nav>
+  <main id="top" class="contacts-page">
+    <img class="contacts-flowers"
+     src="../images/contacts-flowers.png"
+     alt="">
+    <h1>Доставка и контакты</h1>
+
+    <nav aria-label="Разделы страницы">
+        <a href="#delivery">Доставка</a>
+        <a href="#author">Контактные данные автора</a>
+    </nav>
+
+    <section id="delivery">
+        <h2>Доставка и связь с мастерской</h2>
+        <p>
+    При оформлении заказа можно выбрать дату доставки
+    и способ получения: доставка или самовывоз.
+    </p>
+        <p>
+            <a href="order.html">Перейти к оформлению заказа</a>
+        </p>
+    </section>
+
+    <section id="author">
+        <h2>Контактные данные автора</h2>
+        <p>
+            Автор учебного сайта — Шкляр Ксения.
+        </p>
+        <form class="contact-form"
+      action="https://httpbin.org/post"
+      method="post"
+      target="_blank">
+
+    <label>
+        Фамилия:
+        <input type="text" name="surname" value="Шкляр" readonly>
+    </label>
+
+    <label>
+        Имя:
+        <input type="text" name="name" value="Ксения" readonly>
+    </label>
+
+    <label>
+        Группа:
+        <input type="text" name="group" value="БМБ2508" readonly>
+    </label>
+
+    <label>
+        Мобильный телефон:
+        <input type="tel" name="phone" value="+79828996773" readonly>
+    </label>
+
+    <label>
+        Электронная почта:
+        <input type="email" name="email" value="zxtms@gmail.com" readonly>
+    </label>
+
+    <label>
+    Дата отправки сообщения:
+    <input type="date" name="send-date" required>
+</label>
+
+    <button type="submit">Отправить данные автора</button>
+</form>
+    </section>
+
+    <a href="#top">К началу</a>
+</main>
+</body>
+</html>

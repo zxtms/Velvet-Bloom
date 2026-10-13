@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собрать букет - Velvet Bloom</title>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a class="site-logo" href="../index.html">
+    <img src="../images/logo-bloom.png"
+     alt="Velvet Bloom — на главную"
+     width="180">
+</a>
+    <a href="../index.html">Главная</a>
+    <a href="bouquets.html">Букеты</a>
+    <a href="builder.html" aria-current="page">Собрать букет</a>
+    <a href="study.html">Учебный раздел</a>
+    <a href="contacts.html#delivery">Доставка и контакты</a>
+    <a href="order.html">Заказать букет</a>
+    <a href="https://ru.wikipedia.org/wiki/Цветковые_растения"
+   target="_blank"
+   rel="noopener noreferrer">О цветах ↗</a>
+</nav>
+<main id="top" class="builder-page">
+    <img class="builder-flower"
+         src="../images/hero-lillies2.png"
+         alt="">
+    <h1>Собрать букет</h1>
+    <p>Выберите параметры букета и рассчитайте примерную стоимость.</p>
+    <p>
+    <a href="#preferences">Предпочтения</a> ·
+    <a href="#parameters">Параметры букета</a> ·
+    <a href="#result">Стоимость</a>
+</p>
+    <form class="bouquet-builder">
+    <fieldset id="preferences">
+        <legend>1. Предпочтения</legend>
+
+        <p>Какой оттенок вам ближе?</p>
+
+        <label>
+            <input type="radio" name="color" value="light">
+            Светлый
+        </label>
+
+        <label>
+            <input type="radio" name="color" value="pink">
+            Розовый
+        </label>
+
+        <label>
+            <input type="radio" name="color" value="burgundy">
+            Бордовый
+        </label>
+    </fieldset>
+
+    <fieldset id="parameters">
+        <legend>2. Параметры букета</legend>
+
+        <p>Выберите вид цветка:</p>
+
+        <label>
+            <input type="radio" name="flower" value="rose">
+            Роза
+        </label>
+
+        <label>
+            <input type="radio" name="flower" value="peony">
+            Пион
+        </label>
+
+        <label>
+            <input type="radio" name="flower" value="ranunculus">
+            Ранункулюс
+        </label>
+
+        <label>
+            <input type="radio" name="flower" value="orchid">
+            Орхидея
+        </label>
+
+        <p>
+    Количество цветов:
+    <span id="quantity-value">15</span>
+</p>
+
+<input type="range"
+       id="quantity"
+       name="quantity"
+       min="5"
+       max="35"
+       value="15">
+        <p>Длина стебля:</p>
+
+        <label>
+            <input type="radio" name="stem" value="standard">
+            Стандартная
+        </label>
+
+        <label>
+            <input type="radio" name="stem" value="long">
+            Длинная
+        </label>
+
+        <p>Упаковка:</p>
+
+        <label>
+            <input type="radio" name="package" value="none">
+            Без упаковки
+        </label>
+
+        <label>
+            <input type="radio" name="package" value="craft">
+            Крафтовая бумага
+        </label>
+
+        <label>
+            <input type="radio" name="package" value="matte">
+            Матовая упаковка
+        </label>
+
+        <label>
+            <input type="radio" name="package" value="box">
+            Коробка
+        </label>
+    </fieldset>
+    <div class="builder-result" id="result">
+    <h2>Примерная стоимость</h2>
+    <p><span id="total-price">0</span> ₽</p>
+    <p id="bouquet-summary" aria-live="polite">
+        Здесь появятся выбранный оттенок и длина стебля.
+    </p>
+</div>
+</form>
+<p><a href="#top">К началу</a></p>
+</main>
+
+
+<script src="../builder.js"></script>
+</body>
+</html>

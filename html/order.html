@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать букет — Velvet Bloom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <a class="site-logo" href="../index.html">
+    <img src="../images/logo-bloom.png"
+     alt="Velvet Bloom — на главную"
+     width="180">
+</a>
+    <a href="../index.html">Главная</a>
+    <a href="bouquets.html">Букеты</a>
+    <a href="builder.html">Собрать букет</a>
+    <a href="study.html">Учебный раздел</a>
+    <a href="contacts.html#delivery">Доставка и контакты</a>
+    <a href="order.html" aria-current="page">Заказать букет</a>
+<a href="https://ru.wikipedia.org/wiki/Цветковые_растения"
+   target="_blank"
+   rel="noopener noreferrer">О цветах ↗</a>
+</nav>
+   <main id="top" class="order-page">
+    <img class="order-flower"
+     src="../images/order-magnolia.png"
+     alt="">
+    <h1>Заказать букет</h1>
+    <p>Заполните форму, чтобы оформить заказ.</p>
+    <p><a href="#order-form">К форме заказа</a></p>
+    <form id="order-form"
+      class="order-form"
+      action="https://httpbin.org/get"
+      method="get"
+      target="_blank">
+    <label>
+        Ваше имя:
+        <input type="text" name="customer-name">
+    </label>
+
+    <label>
+        Количество букетов:
+        <input type="number" name="bouquet-count" min="1" value="1">
+    </label>
+
+    <label>
+        <input type="checkbox" name="card">
+        Добавить открытку
+    </label>
+
+    <label>
+        Дата доставки:
+        <input type="date" name="delivery-date">
+    </label>
+
+    <label>
+    Пароль для редактирования заказа:
+    <input type="password" name="order-password">
+</label>
+
+    <input type="hidden" name="source" value="website">
+
+    <p>Способ получения:</p>
+
+    <label>
+        <input type="radio" name="delivery-type" value="delivery">
+        Доставка
+    </label>
+
+    <label>
+        <input type="radio" name="delivery-type" value="pickup">
+        Самовывоз
+    </label>
+<button type="submit">Отправить заказ</button>
+</form>
+<p><a href="#top">К началу</a></p>
+</main>
+</body>
+</html>
