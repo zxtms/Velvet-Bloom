@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM_JS. Считываем информацию из DOM</title>
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+   <nav>
+    <a class="site-logo" href="../index.html">
+    <img src="../images/logo-bloom.png"
+     alt="Velvet Bloom — на главную"
+     width="180">
+</a>
+  <a href="../index.html">Главная</a>
+  <a href="bouquets.html">Букеты</a>
+  <a href="builder.html">Собрать букет</a>
+  <a href="study.html" aria-current="page">Учебный раздел</a>
+  <a href="contacts.html#delivery">Доставка и контакты</a>
+  <a href="order.html">Заказать букет</a>
+  <a href="https://ru.wikipedia.org/wiki/Цветковые_растения"
+   target="_blank"
+   rel="noopener noreferrer">О цветах ↗</a>
+</nav>
+  <main id="top" class="passport-task">
+    <h1>DOM_JS. Считываем информацию из DOM</h1>
+    <div class="passport">
+    <section class="passport-page">
+        <h2>Российская Федерация</h2>
+        <p>Паспорт выдан: <span>ОТДЕЛОМ МВД РОССИИ</span></p>
+        <p>Дата выдачи: <span>15.06.2023</span></p>
+        <p>Код подразделения: <span>000-000</span></p>
+    </section>
+
+    <section class="passport-page">
+        <h2>Паспорт</h2>
+        <p>Фамилия: <span id="passport-surname">Шкляр</span></p>
+        <p>Имя: <span id="passport-name">Ксения</span></p>
+        <p>Отчество: <span>Михайловна</span></p>
+        <p>Пол: <span>ЖЕН.</span></p>
+        <p>Год рождения: <span id="passport-year">2007</span></p>
+        <p>Место рождения: <span>Г. ЕКАТЕРИНБУРГ</span></p>
+    </section>
+</div>
+<h2>Получение данных из DOM</h2>
+<figure>
+    <img src="../images/passport-dom.jpg"
+         alt="Считывание фамилии, имени и года рождения через консоль браузера"
+         style="max-width: 100%; height: auto;">
+    <figcaption>
+        Получение фамилии, имени и года рождения из DOM.
+    </figcaption>
+</figure>
+</main>
+</body>
+</html>

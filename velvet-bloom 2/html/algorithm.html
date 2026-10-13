@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Решение алгоритмической задачи — Velvet Bloom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap"
+      rel="stylesheet"> 
+      <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav>
+    <a class="site-logo" href="../index.html">
+    <img src="../images/logo-bloom.png"
+     alt="Velvet Bloom — на главную"
+     width="180">
+</a>
+    <a href="../index.html">Главная</a>
+    <a href="bouquets.html">Букеты</a>
+    <a href="builder.html">Собрать букет</a>
+    <a href="study.html" aria-current="page">Учебный раздел</a>
+    <a href="contacts.html#delivery">Доставка и контакты</a>
+    <a href="order.html">Заказать букет</a>
+    <a href="https://ru.wikipedia.org/wiki/Цветковые_растения"
+   target="_blank"
+   rel="noopener noreferrer">О цветах ↗</a>
+  </nav>
+
+ <main id="top" class="algorithm-page">
+    <h1>Решение алгоритмической задачи</h1>
+
+    <p>
+        <a href="#condition">Условие</a> ·
+        <a href="#solution">Решение</a>
+    </p>
+
+    <section id="condition">
+        <h2>Задача № 1012</h2>
+        <p>
+            Даны вещественные числа A, B, C. Определить,
+            выполняются ли неравенства A &lt; B &lt; C
+            или A &lt; B &gt; C и какое именно неравенство выполняется.
+        </p>
+    </section>
+
+    <section id="solution">
+        <h2>Решение</h2>
+
+        <form id="algorithm-form">
+            <label>
+                A:
+                <input type="number" id="number-a"
+                       name="a" step="any" required>
+            </label>
+
+            <label>
+                B:
+                <input type="number" id="number-b"
+                       name="b" step="any" required>
+            </label>
+
+            <label>
+                C:
+                <input type="number" id="number-c"
+                       name="c" step="any" required>
+            </label>
+
+            <button type="submit">Определить неравенство</button>
+        </form>
+
+        <p id="algorithm-result" aria-live="polite">
+            Введите три числа и нажмите кнопку.
+        </p>
+    </section>
+
+    <p><a href="#top">К началу</a></p>
+</main>
+<script>
+    document.getElementById('algorithm-form')
+        .addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const a = document.getElementById('number-a').valueAsNumber;
+            const b = document.getElementById('number-b').valueAsNumber;
+            const c = document.getElementById('number-c').valueAsNumber;
+            const result = document.getElementById('algorithm-result');
+
+            if (![a, b, c].every(Number.isFinite)) {
+                result.innerText = 'Введите три корректных числа.';
+                return;
+            }
+
+            if (a < b && b < c) {
+                result.innerText = 'Выполняется неравенство A < B < C.';
+            } else if (a < b && b > c) {
+                result.innerText = 'Выполняется неравенство A < B > C.';
+            } else {
+                result.innerText =
+                    'Ни одно из указанных неравенств не выполняется.';
+            }
+        });
+</script>
+</body>
+</html>
